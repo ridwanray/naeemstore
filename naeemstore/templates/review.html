@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<style>
+
+
+h1.testimonials-header{
+    font-family: "Univers57-Condensed", sans-serif;
+    font-size: 18pt;
+    line-height: 1.1;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 6px;
+}
+section#home-reviews{
+	margin: 20px 20px 20px 20px;
+	padding: 100px 0;
+	font-family: "Univers57-Condensed", sans-serif;
+    color: #5d564f;
+    background: #f7f7f7;
+}
+section#home-reviews h2{
+	font-size: 1.75rem;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+.fa-quote-left{
+	padding-right: 10px;
+}
+.fa-quote-right{
+	padding-left: 10px;
+}
+section#home-reviews p{
+	font-size: 13pt;
+}
+.stars{
+	color: #BB8B41;
+}
+
+</style>
+
+<div class="container" style="margin-top:10px;">
+	<!-- ========================= SECTION MAIN  ========================= -->
+
+	<!-- Start review Area -->
+
+	<section id="home-reviews">
+		<div class="col-sm-10 ml-auto mr-auto text-center">
+			<h2 class="">Read what our customers are saying</h2>
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<p class="review-body"><i class="fa fa-quote-left" aria-hidden="true"></i>
+We appreciate the fast delivery for the last product we ordered. Thanks<i class="fa fa-quote-right" aria-hidden="true"></i></p>
+						<p class="review-name">Valued Customer at RayConsult Inc.</p>
+						<div class="stars">
+							<i class="fa fa-star fa-lg" aria-hidden="true"></i>
+							<i class="fa fa-star fa-lg" aria-hidden="true"></i>
+							<i class="fa fa-star fa-lg" aria-hidden="true"></i>
+							<i class="fa fa-star fa-lg" aria-hidden="true"></i>
+							<i class="fa fa-star fa-lg" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<p class="review-body"><i class="fa fa-quote-left" aria-hidden="true"></i>
+I have always had a great experience working with Annaeem Store. I have always recommended that we have Annaeem Store get our herbs for us.<i class="fa fa-quote-right" aria-hidden="true"></i>
+</p>
+						<p class="review-name">Wale at Ashifaa Enterprises.</p>
+						<div class="stars">
+							<i class="fa fa-star fa-lg" aria-hidden="true"></i>
+							<i class="fa fa-star fa-lg" aria-hidden="true"></i>
+							<i class="fa fa-star fa-lg" aria-hidden="true"></i>
+							<i class="fa fa-star fa-lg" aria-hidden="true"></i>
+							<i class="fa fa-star fa-lg" aria-hidden="true"></i>
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<p class="review-body"><i class="fa fa-quote-left" aria-hidden="true"></i>
+Thanks for the original honey delivered to me<i class="fa fa-quote-right" aria-hidden="true"></i>
+</p>
+						<p class="review-name">Wale at Ashifaa Enterprises.</p>
+						<div class="stars">
+							<i class="fa fa-star fa-lg" aria-hidden="true"></i>
+							<i class="fa fa-star fa-lg" aria-hidden="true"></i>
+							<i class="fa fa-star fa-lg" aria-hidden="true"></i>
+							<i class="fa fa-star fa-lg" aria-hidden="true"></i>
+							<i class="fa fa-star-o fa-lg" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<p class="review-body"><i class="fa fa-quote-left" aria-hidden="false"></i>
+very professional and detailed to requirements<i class="fa fa-quote-right" aria-hidden="true"></i>
+</p>
+						<p class="review-name">Valued Customer at Lekki</p>
+						<div class="stars">
+							<i class="fa fa-star fa-lg" aria-hidden="true"></i>
+							<i class="fa fa-star fa-lg" aria-hidden="true"></i>
+							<i class="fa fa-star fa-lg" aria-hidden="true"></i>
+							<i class="fa fa-star fa-lg" aria-hidden="true"></i>
+							<i class="fa fa-star fa-lg" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	
+	<!-- End review Area -->	
+<!-- ========================= SECTION MAIN END// ========================= -->
+</div>
+{% endblock %}

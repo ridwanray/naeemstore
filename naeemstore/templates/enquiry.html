@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container" style="margin-top:10px;">
+	<!-- ========================= SECTION MAIN  ========================= -->
+	<section class="padding-bottom">
+
+		
+
+		<div class="row">
+			<div class="col-md-8">
+				<div class=" banner-quote overlay-gradient"
+					style="background-image: url('img/slide1s.jpg');">
+					<div class="card-img-overlay white">
+						<h3 class="card-title">Send Us Your Message And We'll Be In Touch.</h3>
+						<p class="card-text" style="max-width: 400px">We are just a click away from you! </p>
+						<a href="{% url 'home' %}" class="btn btn-primary rounded-pill">Home</a>
+					</div>
+				</div>
+			</div> <!-- col // -->
+			<div class="col-md-4">
+
+				<div class="card card-body">
+					<h4 class="title py-3">Your Request Is Highly Valued</h4>
+					<form>
+						<div class="form-group">
+							<input class="form-control" name="" placeholder="What are you looking for?" type="text">
+						</div>
+						<div class="form-group">
+							<div class="input-group">
+								<input class="form-control" placeholder="Quantity" name="" type="text">
+
+								<select class="custom-select form-control">
+									<option>Bottles</option>
+									<option>Litres</option>
+									<option>Pieces</option>
+									<option>Gramms</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="input-group">
+								<input class="form-control" placeholder="Phone Number" name="" type="text">
+
+								<input class="form-control" placeholder="Email Address" name="" type="text">
+							</div>
+						</div>
+						<div class="form-group">
+							<button class="btn btn-warning">Submit Your Request</button>
+						</div>
+					</form>
+				</div>
+
+			</div> <!-- col // -->
+		</div> <!-- row // -->
+	</section>
+<!-- ========================= SECTION SUBSCRIBE END// ========================= -->
+{% endblock %}

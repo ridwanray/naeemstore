@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+<section  style="margin-bottom:10px;">
+<div class='d-flex justify-content-center' style="margin-top:10px; margin-bottom:15px;">
+	<div class='col-sm-6 col-sm-offset-3'>
+		<h3 class='text-center text-warning'>Login</h3>
+		<form method="post" action=".">
+		 <div class=""> {% csrf_token %}
+		  {{ form|crispy }}
+		 </div>
+		  <input style="margin-top: 10px;"class='btn btn-block rounded-pill btn-primary' type="submit" value="{% trans 'Submit' %}" />
+		  <input type="hidden" name="next" value="{{ next }}" />
+		</form>
+	</div>
+
+</div>
+	<hr/>
+<div class='row d-flex justify-content-center' >
+<div class='col-sm-6 col-sm-offset-3 text-center'>
+<p class="">{% trans "Forgot password" %}? <a  class="text-warning" href="{% url 'auth_password_reset' %}">{% trans "Reset it!" %}</a></p>
+<p>{% trans "Not a member" %}? <a class="text-warning" href="{% url 'registration_register' %}">{% trans "Register" %}</a></p>
+</div>
+</div>
+</section>
+{% endblock %}
